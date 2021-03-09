@@ -1,0 +1,12 @@
+{
+  "name": "devbarber",
+  "displayName": "devbarber",
+  "expo": {
+    "name": "devbarber",
+    "slug": "devbarber",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
