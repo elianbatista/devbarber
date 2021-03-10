@@ -1,11 +1,39 @@
 import React from 'react'
 import { Text } from 'react-native'
-import { Container } from './styles'
+import { 
+  Container,
+  InputArea,
+  CustomButton,
+  CustomButtonText,
+  SignMessageButton,
+  SignMessageButtonText,
+  SignMessageButtonTextBold
+} from './styles'
 
-export default () => {
+import BarberLogo from '../../assets/barber.svg'
+
+const SignIn = () => {
   return (
     <Container>
-      <Text>SignIn</Text>
+      <BarberLogo 
+        width="100%"
+        height="160"
+      />
+      <InputArea>
+        <CustomButton>
+          <CustomButtonText>LOGIN</CustomButtonText>
+        </CustomButton>
+      </InputArea>
+      <SignMessageButton>
+        <SignMessageButtonText>
+          Ainda não possui uma conta?
+        </SignMessageButtonText>
+        <SignMessageButtonTextBold>
+          Cadastre-se
+        </SignMessageButtonTextBold>
+      </SignMessageButton>
     </Container>
   )
 }
+
+export default SignIn
