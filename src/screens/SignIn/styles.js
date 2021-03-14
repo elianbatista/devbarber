@@ -7,7 +7,7 @@ export const Container = styled.SafeAreaView`
   justify-content: center;
   align-items: center;
 `
- 
+  
 export const InputArea = styled.View`
   
 `
