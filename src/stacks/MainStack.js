@@ -20,4 +20,4 @@ export default () => {
       <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   )
-}
+} 
