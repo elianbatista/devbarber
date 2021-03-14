@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import { 
   Container,
   InputArea,
@@ -17,16 +17,19 @@ import LockIcon from '../../assets/lock.svg'
 import SignInput from '../../components/SignInput'
 
 const SignIn = () => { 
+  const navigation = useNavigation()
 
   const [emailField, setEmailField] = useState('')
   const [passwordField, setPasswordField] = useState('')
 
   const handleSignClick = () => {
-    
+
   }
 
   const handleMessageButtonClick = () => {
-
+    navigation.reset({
+      routes: [{ name: 'SignUp' }]
+    })
   }
 
   return (
