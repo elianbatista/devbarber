@@ -21,6 +21,14 @@ const SignIn = () => {
   const [emailField, setEmailField] = useState('')
   const [passwordField, setPasswordField] = useState('')
 
+  const handleSignClick = () => {
+    
+  }
+
+  const handleMessageButtonClick = () => {
+
+  }
+
   return (
     <Container>
       <BarberLogo 
@@ -41,11 +49,11 @@ const SignIn = () => {
           onChangeText={(t) => setPasswordField(t)}
           password={true}
         />
-        <CustomButton>
+        <CustomButton onPress={handleSignClick}>
           <CustomButtonText>LOGIN</CustomButtonText>
         </CustomButton>
       </InputArea>
-      <SignMessageButton>
+      <SignMessageButton onPress={handleMessageButtonClick} >
         <SignMessageButtonText>
           Ainda não possui uma conta?
         </SignMessageButtonText>
