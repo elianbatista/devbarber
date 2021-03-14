@@ -12,7 +12,7 @@ import {
 
 import BarberLogo from '../../assets/barber.svg'
 
-const SignIn = () => {
+const SignIn = () => { 
   return (
     <Container>
       <BarberLogo 
