@@ -38,7 +38,7 @@ const SignUp = () => {
     <Container>
       <BarberLogo 
         width="100%"
-        height="160"
+        height="160" 
       />
       <InputArea>
       <SignInput 
