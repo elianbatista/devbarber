@@ -12,7 +12,7 @@ export default () => {
     <Stack.Navigator
       initialRouteName="Preload"
       screenOptions={{
-        headerShown: false
+        headerShown: false 
       }}
     >
       <Stack.Screen name="Preload" component={Preload} />
