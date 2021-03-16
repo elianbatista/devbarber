@@ -17,7 +17,7 @@ const Preload = () => {
         navigation.navigate('SignIn')
       }
     }
-    checkToken()
+    checkToken() 
   }, [])
 
   return (
