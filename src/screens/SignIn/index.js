@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native'
 import { 
   Container,
   InputArea,
-  CustomButton,
+  CustomButton, 
   CustomButtonText,
   SignMessageButton,
   SignMessageButtonText,
