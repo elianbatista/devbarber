@@ -17,6 +17,8 @@ import PersonIcon from '../../assets/person.svg'
 
 import SignInput from '../../components/SignInput'
 
+import Api from '../../Api'
+
 const SignUp = () => { 
   const navigation = useNavigation()
 
@@ -24,8 +26,17 @@ const SignUp = () => {
   const [emailField, setEmailField] = useState('')
   const [passwordField, setPasswordField] = useState('')
 
-  const handleSignClick = () => {
-
+  const handleSignClick = async () => {
+    if (nameField != '' && emailField != '' && passwordField != '') {
+      let json = await Api.signUp(nameField, emailField, passwordField)
+      if (json.token) {
+        alert('Deu Certo')
+      } else {
+        alert('Erro: ' + json.error)
+      }
+    } else {
+      alert('Preenche os campos')
+    } 
   }
 
   const handleMessageButtonClick = () => {
