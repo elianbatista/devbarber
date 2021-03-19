@@ -10,6 +10,8 @@ import {
   SignMessageButtonTextBold
 } from './styles'
 
+import Api from '../../Api'
+
 import BarberLogo from '../../assets/barber.svg'
 import EmailIcon from '../../assets/email.svg'
 import LockIcon from '../../assets/lock.svg'
@@ -22,8 +24,17 @@ const SignIn = () => {
   const [emailField, setEmailField] = useState('')
   const [passwordField, setPasswordField] = useState('')
 
-  const handleSignClick = () => {
-
+  const handleSignClick = async () => {
+    if (emailField != '' && passwordField != '') {
+      let json = await Api.signIn(emailField, passwordField)
+      if (json.token) {
+        alert('Deu Certo!')
+      } else {
+        alert('E-mail e/ou senha errados!')
+      }
+    } else {
+      alert('Preencha os campos!')
+    }
   }
 
   const handleMessageButtonClick = () => {
