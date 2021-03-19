@@ -11,5 +11,5 @@ export const UserReducer = (state, action) => {
     break
     default: 
       return state 
-  } 
+  }  
 }
