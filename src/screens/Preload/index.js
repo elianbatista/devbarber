@@ -4,6 +4,7 @@ import { AsyncStorage } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { UserContext } from '../../contexts/UserContext'
 import BarberLogo from '../../assets/barber.svg'
+import Api from '../../Api'
 
 const Preload = () => {
   const { dispatch: userDispatch } = useContext(UserContext)
