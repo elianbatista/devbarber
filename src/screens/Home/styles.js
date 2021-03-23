@@ -5,7 +5,7 @@ export const Container = styled.SafeAreaView`
   
 `
 
-export const Scroller = styled.ScrollView` 
+export const Scroller = styled.ScrollView`  
 
 `
 
