@@ -30,5 +30,5 @@ export const LocationInput = styled.TextInput`
 `
 
 export const LocationFinder = styled.TouchableOpacity`
-
+ 
 `
