@@ -9,7 +9,7 @@ export const Scroller = styled.ScrollView`
 
 `
 
-export const HeaderArea = styled.View`
+export const HeaderArea = styled.View` 
 
 `
 
@@ -30,5 +30,5 @@ export const LocationInput = styled.TextInput`
 `
 
 export const LocationFinder = styled.TouchableOpacity`
-  
+
 `
