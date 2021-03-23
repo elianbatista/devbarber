@@ -9,7 +9,7 @@ export const Scroller = styled.ScrollView`
 
 `
 
-export const HeaderArea = styled.View` 
+export const HeaderArea = styled.View`  
 
 `
 
